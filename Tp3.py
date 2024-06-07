@@ -89,7 +89,7 @@ def evaluar(tokens):
         simbolo_entrada = tokens[0]
         cima_pila = p.inspeccionar()
 
-        if re.match(r"\d+", simbolo_entrada) and cima_pila == "id":#se fija si en el caracter ingresante es cualquier número, y si en la cima de la pila se encuentra id, si ambas son True,reemplaza el id por el número analizado
+        if re.match(r"\d+", simbolo_entrada) and cima_pila == "id": #se fija si en el caracter ingresante es cualquier número, y si en la cima de la pila se encuentra id, si ambas son True, reemplaza el "id" por el número analizado
             p.extraer()
             tokens.pop(0)
             print("{:<45}{:<60}{:<20}".format(str(p.contenido()), str(tokens), str(salida)))
