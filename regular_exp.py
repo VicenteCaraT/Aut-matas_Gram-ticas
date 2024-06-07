@@ -53,7 +53,7 @@ def cuil(dni:str):
         return f"El CUIL ingresado <{dni}> no es valido."
 
 print("< CUIL >")
-print(cuil("23-44909938-2"))
+print(cuil("20-44909938-2"))
 print(cuil("44909938"))
     
 #Fecha con formato dd/mm/yyyy o dd-mm-yyyy
